@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GoodWill Insurance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+  body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.box{
+  width: 700px;
+  padding: 0px;
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:whitesmoke;
+  text-align: center;
+}
+.box h4{
+  color:skyblue;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"],.box input[type= "date"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color:black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus,.box input[type= "date"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+</style>
+<body style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(82, 149, 212));">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index">GoodWill Insurance</a>
+    </div>
+    <ul class="nav navbar-nav"  style="float: right;">
+      <li><a href=index>Home</a></li>
+      <li><a href="loginn">Login</a></li>
+      <li class='active'><a href="signup">Sign up</a></li>
+      <li><a href="Agentlog">Agent Sign up</a></li>
+    </ul>
+  </div>
+</nav>
+<form class="box" method="POST">
+  <h1 style="font-family:fantasy;color:skyblue;">Sign Up</h1>
+  <input type="text" name="cust_id" id="cust_id"  placeholder="Customer id">
+  <input type="text" name="fname" id="fname" placeholder="First Name">
+  <input type="text" name="mname" id="mname" placeholder="Middle Name">
+  <input type="text" name="lname" id="lname" placeholder="Last Name">
+  <h4 style="font-family:fantasy;">DOB :</h4><input type="date" name="date" placeholder="DOB">
+  <input type="text"  name="Gender"  placeholder="Gender:M/F">
+  <input type="text"  name="Address"  placeholder="Address">
+  <input type="text"  name="Contact" placeholder="Contact">
+  <input type="text"  name="email"placeholder="Email">
+  <input type="text"  name="agent_id" placeholder="Agent id">
+  <input type="password"  name="pass" placeholder="Password">
+  <input type="submit" value="Sign Up">
+</form>
+</body>
+</html>

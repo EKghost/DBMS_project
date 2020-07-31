@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GoodWill Insurance</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>	
+</head>
+<body background="indexbg.jpg">
+<style>
+.body{
+height: 100%;
+font-family:Fjalla One;
+}
+.dottxt{
+position: absolute;
+right: 50px;
+bottom: 50px;
+left:35px;
+color: white;
+}
+.dot {
+  font-family:Fjalla One;
+  position: relative;
+  padding: 100px;
+  margin: 50px;
+  height: 25px;
+  width: 25px;
+  background-color:sandybrown;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot:hover{
+  border-radius: 30%;
+  background-color: skyblue;
+}
+.dot2:hover{
+border-radius: 30%;
+background-color: skyblue;
+}
+.dot2 {
+  font-family:Fjalla One;
+  position: relative;
+  padding: 102px;
+  margin: 50px;
+  height: 25px;
+  width: 25px;
+  background-color:sandybrown;
+  border-radius: 50%;
+  display: inline-block;
+}
+</style>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="custhome" style="font-family: fantasy">GoodWill Insurance</a>
+      </div>
+      <ul class="nav navbar-nav" style="float: right;">
+        <li><a href="index">Signout</a></li>
+        <li><a href="custhome"><img src="log2.png" style=" 
+          height: 30px;
+          border-radius: 0%;
+          overflow:auto;
+          margin-top: -6px;"></a></li>
+      </ul>
+    </div>
+  </nav>
+<div style="text-align:center">
+  <h1 style="font-family: fantasy;font-style:oblique;color:black;">
+Choose your preferred insurance
+</h1>
+<a href=lifechoose><span class="dot" ><h2 class="dottxt">Life Insurance</h2></span></a>
+  <a  href=vehiclechoose><span class="dot"><h2 class="dottxt">Vehicle insurance</h2></span></a>
+  <a href=travelchoose><span class="dot2"><h2 class="dottxt">Travel insurance</h2></span></a>
+  <a href=healthchoose><span class="dot2" ><h2 class="dottxt">Health insurance</h2></span></a>
+</div>
+</body>
+</html>
